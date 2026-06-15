@@ -4,9 +4,12 @@ import os
 
 app = Flask(__name__)
 
-client = genai.Client(
-    api_key=os.environ.get("GEMINI_API_KEY")
-)
+api_key = os.environ.get("GEMINI_API_KEY")
+
+if not api_key:
+    raise ValueError("GEMINI_API_KEY environment variable not found")
+
+client = genai.Client(api_key=api_key)
 
 @app.route("/")
 def home():
