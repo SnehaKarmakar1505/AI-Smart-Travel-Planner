@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Smart Travel Planner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;600&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@500;600&family=Lato:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="{{ url_for('static', filename='travel.mp4') }}" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<!-- HERO SECTION -->
+<section class="hero">
+
+    <h1>🌍 Welcome to Smart Travel Planner</h1>
+
+<h3 class="tagline">
+    Explore. Plan. Travel.
+</h3>
+
+<p class="hero-text">
+
+    Smart Travel Planner uses Artificial Intelligence
+    to create customized travel experiences based on
+    your destination, budget, travel duration,
+    and personal preferences.
+
+    Get day-wise itineraries, local food recommendations,
+    budget estimates, and packing suggestions —
+    all in one place.
+
+</p>
+
+    <a href="/planner">
+        <button class="explore-btn">
+            Let's Explore
+        </button>
+    </a>
+
+</section>
+<div class="gallery">
+
+    <div class="image-card">
+        <img src="{{ url_for('static', filename='beach.jpg') }}">
+        <h3>Beach Escapes</h3>
+    </div>
+
+    <div class="image-card">
+        <img src="{{ url_for('static', filename='mountain.jpg') }}">
+        <h3>Mountain Adventures</h3>
+    </div>
+
+    <div class="image-card">
+        <img src="{{ url_for('static', filename='city.jpg') }}">
+        <h3>City Breaks</h3>
+    </div>
+
+    <div class="image-card">
+        <img src="{{ url_for('static', filename='adventure.jpg') }}">
+        <h3>Adventure Trips</h3>
+    </div>
+
+</div>
+
+<!-- ABOUT SECTION -->
+<section class="about">
+
+    <h2>What is it about?</h2>
+
+    <p>
+        Smart Travel Planner is an AI-powered travel assistant
+        that helps users generate personalized travel itineraries
+        based on destination, budget, trip duration and travel preferences.
+    </p>
+
+    <div class="about-grid">
+
+    <div class="card">
+        <h3>🌍 Discover Destinations</h3>
+        <p>Find amazing places tailored to your interests.</p>
+    </div>
+
+    <div class="card">
+        <h3>💰 Budget Planning</h3>
+        <p>Get cost estimates and travel smarter.</p>
+    </div>
+
+    <div class="card">
+        <h3>🍜 Local Food Guide</h3>
+        <p>Explore authentic local cuisine recommendations.</p>
+    </div>
+
+    <div class="card">
+        <h3>🎒 Packing Assistant</h3>
+        <p>Receive AI-generated packing suggestions.</p>
+    </div>
+
+</div>
+
+</section>
+
+<!-- FEATURES SECTION -->
+<section class="features">
+
+    <h2>Features</h2>
+
+    <ul>
+        <li>AI Generated Travel Itinerary</li>
+        <li>Budget Planning</li>
+        <li>Local Food Recommendations</li>
+        <li>Packing Suggestions</li>
+        <li>Day-wise Travel Schedule</li>
+    </ul>
+
+</section>
+
+</body>
+</html>
