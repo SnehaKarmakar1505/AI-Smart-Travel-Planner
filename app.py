@@ -1,10 +1,11 @@
 from flask import Flask, render_template, request
 from google import genai
+import os
 
 app = Flask(__name__)
 
 client = genai.Client(
-    api_key="YOUR_API_KEY_HERE"
+    api_key=os.environ.get("GEMINI_API_KEY")
 )
 
 @app.route("/")
