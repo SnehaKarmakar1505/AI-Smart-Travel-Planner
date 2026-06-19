@@ -3,13 +3,27 @@
 <html>
 
 <head>
-    <title>Smart Travel Planner</title>
+    <title>TravelGenie | Plan Smarter • Travel Better</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;600&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@500;600&family=Lato:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
+<nav class="navbar">
+
+    <div class="brand">
+        <div class="logo">✈️ TravelGenie</div>
+        <div class="tagline-navbar">Plan Smarter • Travel Better</div>
+    </div>
+
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="/planner">Plan Trip</a>
+    </div>
+
+</nav>
 
 <video autoplay muted loop playsinline id="bg-video">
     <source src="{{ url_for('static', filename='Travel.mp4') }}" type="video/mp4">
@@ -71,7 +85,7 @@
 </div>
 
 <!-- ABOUT SECTION -->
-<section class="about">
+<section class="about" id="about">
 
     <h2>What is it about?</h2>
 
@@ -108,7 +122,7 @@
 </section>
 
 <!-- FEATURES SECTION -->
-<section class="features">
+<section class="features" id="features">
 
     <h2>Features</h2>
 

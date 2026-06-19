@@ -57,6 +57,7 @@ pre{
     white-space:pre-wrap;
 }
 .hero{
+    padding-top:120px;
     height:100vh;
     display:flex;
     flex-direction:column;
@@ -270,4 +271,51 @@ font-size:1.2rem;
     color:white;
 
     margin-top:15px;
+}
+/* NAVBAR */
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-sizing: border-box;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.15);
+}
+
+.brand{
+    display:flex;
+    flex-direction:column;
+}
+
+.logo{
+    font-family:'Playfair Display', serif;
+    font-size:30px;
+    font-weight:800;
+    color:#111;
+}
+
+.tagline-navbar{
+    font-size:12px;
+    letter-spacing:2px;
+    color:#666;
+    text-transform:uppercase;
+}
+
+.nav-links a{
+    text-decoration:none;
+    margin-left:25px;
+    color:#111;
+    font-weight:600;
+    font-family:'Poppins', sans-serif;
+}
+
+.nav-links a:hover{
+    color:#0a66ff;
 }
